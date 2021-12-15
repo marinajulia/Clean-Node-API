@@ -11,6 +11,9 @@ describe('SignUp Controller', () =>{
           }
       }
       const httpResponse = sut.handle(httpRequest)
+      //quando for comparar objeto, não usar toBe pois ele também compara o ponteiro do objeto
       expect(httpResponse.statusCode).toBe(400)
+      //o to equal compara somentes os valores dos objetos
+      expect(httpResponse.body).toEqual(new Error('Missing param: name'))
     })
 })
