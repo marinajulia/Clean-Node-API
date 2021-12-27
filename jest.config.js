@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: 'coverage',
