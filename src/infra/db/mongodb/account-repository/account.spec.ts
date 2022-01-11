@@ -4,7 +4,7 @@ import { MongoClient, MongoClientOptions } from 'mongodb'
 describe('Account Mongo Repository', async () => {
     let client: MongoClient
     beforeAll(async () => {
-        client = await MongoClient.connect(String(process.env.MONGO_URL)s);
+        client = await MongoClient.connect(String(process.env.MONGO_URL));
         })
 
     afterAll(async () => {
